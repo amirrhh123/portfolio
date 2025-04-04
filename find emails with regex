@@ -1,0 +1,9 @@
+import re
+txt=str(input("txt:"))
+
+
+result1= re.findall("\w*@gmail\.com|\w*@yahoo\.com|\w*@outlook\.com",txt)
+result2= re.finditer("\w*@gmail\.com|\w*@yahoo\.com|\w*@outlook\.com",txt)
+
+print(result1)
+print(list(result2))
