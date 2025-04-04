@@ -9,13 +9,8 @@ dental_implant=int(23000000)
 Physiotherapy=int(350000)
 Orthopedic=int(280000)
 
-# تا 18 رفتم
-# def connect_database():
-#     global database, cursor
-#     h=str(input("host:"))
-#     p=int(input("port:"))
-#     u=str(input("user:"))
-#     pw=str(input("password:"))
+
+
 
 try:
         database=mysql.connector.connect(
@@ -30,39 +25,7 @@ try:
 except:
         print(" connected")    
 
-# connect_database()        
-    
 
-    ##################################################################################
-# Available_Visits_Dentist_saturday=["1.Saturday(10-11)","2.Saturday(11-12)","3.Saturday(12-13)","4.Saturday(13-14)","5.Saturday(14-15)","6.Saturday(15-16)","7.Saturday(16-17)","8.Saturday(17-18)","9.Saturday(18-19)"]
-
-# Available_Visits_Dentist_Sunday/Esfand 5th=["10.Sunday/Esfand 5th(10-11)","11.Sunday/Esfand 5th(11-12)","12.Sunday/Esfand 5th(12-13)","13.Sunday/Esfand 5th(13-14)","14.Sunday/Esfand 5th(14-15)","15.Sunday/Esfand 5th(15-16)","16.Sunday/Esfand 5th(16-17)","17.Sunday/Esfand 5th(17-18)","18.Sunday/Esfand 5th(18-19)"]
-
-# Available_Visits_Dentist_Monday/Esfand 6th=["19.Monday/Esfand 6th(10-11)","20.Monday/Esfand 6th(11-12)","21.Monday/Esfand 6th(12-13)","22.Monday/Esfand 6th(13-14)","23.Monday/Esfand 6th(14-15)","24.Monday/Esfand 6th(15-16)","25.Monday/Esfand 6th(16-17)","26.Monday/Esfand 6th(17-18)","27.Monday/Esfand 6th(18-19)"]
-
-# Available_Visits_Dentist_Tuesday/Esfand 6th/Esfand 6th=["28.Tuesday/Esfand 6th(10-11)","29.Tuesday/Esfand 6th(11-12)","30.Tuesday/Esfand 6th(12-13)","31.Tuesday/Esfand 6th(13-14)","32.Tuesday/Esfand 6th(14-15)","33.Tuesday/Esfand 6th(15-16)","34.Tuesday/Esfand 6th(16-17)","35.Tuesday/Esfand 6th(17-18)","36.Tuesday/Esfand 6th(18-19)"]
-
-# Available_Visits_Dentist_Wednesday/Esfand 7th=["37.Wednesday/Esfand 7th(10-11)","38.Wednesday/Esfand 7th(11-12)","39.Wednesday/Esfand 7th(12-13)","40.Wednesday/Esfand 7th(13-14)","41.Wednesday/Esfand 7th(14-15)","42.Wednesday/Esfand 7th(15-16)","43.Wednesday/Esfand 7th(16-17)","44.Wednesday/Esfand 7th(17-18)","45.Wednesday/Esfand 7th(18-19)"]
-
-# Available_Visits_Dentist_Thursday/Esfand 8th=["46.Thursday/Esfand 8th(10-11)","47.Thursday/Esfand 8th(11-12)","48.Thursday/Esfand 8th(12-13)","49.Thursday/Esfand 8th(13-14)","50.Thursday/Esfand 8th(14-15)","51.Thursday/Esfand 8th(15-16)","52.Thursday/Esfand 8th(16-17)","53.Thursday/Esfand 8th(17-18)","54.Thursday/Esfand 8th(18-19)"]
-
-# Available_Visits_Dentist=["1.Saturday(10-11)","2.Saturday(11-12)","3.Saturday(12-13)","4.Saturday(13-14)","5.Saturday(14-15)","6.Saturday(15-16)","7.Saturday(16-17)","8.Saturday(17-18)","9.Saturday(18-19)",
-# "10.Sunday/Esfand 5th(10-11)","11.Sunday/Esfand 5th(11-12)","12.Sunday/Esfand 5th(12-13)","13.Sunday/Esfand 5th(13-14)","14.Sunday/Esfand 5th(14-15)","15.Sunday/Esfand 5th(15-16)","16.Sunday/Esfand 5th(16-17)","17.Sunday/Esfand 5th(17-18)","18.Sunday/Esfand 5th(18-19)",
-# "19.Monday/Esfand 6th(10-11)","20.Monday/Esfand 6th(11-12)","21.Monday/Esfand 6th(12-13)","22.Monday/Esfand 6th(13-14)","23.Monday/Esfand 6th(14-15)","24.Monday/Esfand 6th(15-16)","25.Monday/Esfand 6th(16-17)","26.Monday/Esfand 6th(17-18)","27.Monday/Esfand 6th(18-19)",
-# "28.Tuesday/Esfand 6th(10-11)","29.Tuesday/Esfand 6th(11-12)","30.Tuesday/Esfand 6th(12-13)","31.Tuesday/Esfand 6th(13-14)","32.Tuesday/Esfand 6th(14-15)","33.Tuesday/Esfand 6th(15-16)","34.Tuesday/Esfand 6th(16-17)","35.Tuesday/Esfand 6th(17-18)","36.Tuesday/Esfand 6th(18-19)",
-# "37.Wednesday/Esfand 7th(10-11)","38.Wednesday/Esfand 7th(11-12)","39.Wednesday/Esfand 7th(12-13)","40.Wednesday/Esfand 7th(13-14)","41.Wednesday/Esfand 7th(14-15)","42.Wednesday/Esfand 7th(15-16)","43.Wednesday/Esfand 7th(16-17)","44.Wednesday/Esfand 7th(17-18)","45.Wednesday/Esfand 7th(18-19)",
-# "46.Thursday/Esfand 8th(10-11)","47.Thursday/Esfand 8th(11-12)","48.Thursday/Esfand 8th(12-13)","49.Thursday/Esfand 8th(13-14)","50.Thursday/Esfand 8th(14-15)","51.Thursday/Esfand 8th(15-16)","52.Thursday/Esfand 8th(16-17)","53.Thursday/Esfand 8th(17-18)","54.Thursday/Esfand 8th(18-19)"]
-# Unavailable_Visits_Dentist_Saturday=[]
-
-# Unavailable_Visits_Dentist=[]
-
-# Unavailable_Visits_Dentist_Tuesday/Esfand 6th=[]
-
-# Unavailable_Visits_Dentist_Tuesday/Esfand 6th=[]
-
-# Unavailable_Visits_Dentist_Thursday/Esfand 8th=[]
-
-# Unavailable_Visits_Dentist_Thursday/Esfand 8th=[]
 
 today=JalaliDateTime.today()
 year=today.strftime("%Y")
